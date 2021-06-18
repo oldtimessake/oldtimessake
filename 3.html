@@ -4,14 +4,19 @@
   <title>WEB1 - javascript</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="darkmodebutton.js"></script>
 </head>
 <body>
+  <input type="button" value="dark" onclick="
+    DarkModeHandler(this);
+  ">
   <h1><a href="index.html">WEB</a></h1>
   <div id="grid">
     <ol>
       <li><a href="1.html">HTML</a></li>
       <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html" class="currentpage">JavaScript</a></li>
+      <li><a href="3.html" id="currentpage">JavaScript</a></li>
     </ol>
     <div id="article">
       <h2>JavaScript</h2>
